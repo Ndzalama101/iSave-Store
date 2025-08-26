@@ -62,14 +62,17 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database1.mdf" />
-    <Content Include="App_Data\Database1_log.ldf">
-      <DependentUpon>Database1.mdf</DependentUpon>
+    <Content Include="App_Data\Database2.mdf" />
+    <Content Include="App_Data\Database2_log.ldf">
+      <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
     <Content Include="Service1.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ISaveLINQ.cs">
+      <DependentUpon>ISaveLINQ.dbml</DependentUpon>
+    </Compile>
     <Compile Include="ISaveLINQ.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
